@@ -2,15 +2,19 @@
   padding: 0;
   margin: 0;
   font-size: 16px;
+  
 }
 
+
 body {
-  background-color: #fff8d7;  font-family: 'Inter', sans-serif;
+  background-color: #fff8d7;
+  font-family: 'Outfit', sans-serif;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
   align-items: center;
   height: 100vh;
+  color: hsl(30, 10%, 34%);
 }
 
 .post {
@@ -34,8 +38,49 @@ h1 {
   padding: 5px;
   font-weight: 400;
   font-size: 30px;
+  color: hsl(24, 5%, 18%);
 }
 
 p {
   padding-bottom: 5px;
+}
+
+.info-box {
+  background-color: hsl(332, 66%, 94%);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.info-title {
+  font-weight: 600;
+  color: hsl(332, 51%, 32%);
+}
+
+span {
+  font-weight: 500;
+  color: hsl(332, 51%, 32%);
+}
+
+ul, ol {
+  list-style-position: inside; 
+}
+
+li::marker {
+  color:hsl(332, 51%, 32%);
+}
+
+li {
+  padding: 4px;
+}
+
+.ingredients, .prepare {
+  color: hsl(14, 45%, 36%);
+  font-family: 'Young Serif', sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  padding: 5px;
+}
+
+footer {
+  padding-bottom: 15px;
 }
