@@ -5,9 +5,8 @@
   
 }
 
-
 body {
-  background-color: #fff8d7;
+  background-color: white;
   font-family: 'Outfit', sans-serif;
   display: flex;
   justify-content: flex-start;
@@ -15,14 +14,12 @@ body {
   align-items: center;
   height: 100vh;
   color: hsl(30, 10%, 34%);
-}
-
-.post {
-  padding: 20px;
+  width: 100%;
 }
 
 article {
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
   background-color: #fff; 
   padding: 25px;
   border-radius: 10px;
@@ -37,7 +34,7 @@ h1 {
   font-family: 'Young Serif', sans-serif;
   padding: 5px;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 25px;
   color: hsl(24, 5%, 18%);
 }
 
@@ -77,10 +74,31 @@ li {
   color: hsl(14, 45%, 36%);
   font-family: 'Young Serif', sans-serif;
   font-weight: 400;
-  font-size: 25px;
+  font-size: 20px;
   padding: 5px;
 }
 
 footer {
   padding-bottom: 15px;
+  text-align: center;
+  width: 100%;
+}
+
+/* Responsivo para telas maiores */
+@media (min-width: 768px) {
+  body {
+    background-color: #fff8d7;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .ingredients, .prepare {
+    font-size: 25px;
+  }
+
+  .post {
+    padding: 20px;
+  }
 }
